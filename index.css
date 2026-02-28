@@ -47,7 +47,8 @@ nav a:hover {
 
 /* HERO SECTION */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 120px 20px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,3 +140,46 @@ button:hover {
   padding: 60px 10%;
   text-align: center;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .hero-content h2 {
+    font-size: 38px;
+  }
+
+  .tagline {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+button {
+    padding: 10px 22px;
+  }
+
+  button a {
+    font-size: 14px;
+  }
