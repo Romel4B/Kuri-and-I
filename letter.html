@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Letter</title>
+<link rel="stylesheet" href="letter.css" />
+</head>
+<body>
+
+<div class="valentine-container" onclick="this.classList.toggle('open')">
+  <div class="envelope">
+    <div class="flap"></div>
+    <div class="letter">
+      <h2>Happy Valentine’s Day! 💖</h2>
+      <p>My Little Soda Pop,</p><br>
+      <p>People think our story began with a game.</p><br>
+<p>A random match.</p><br> <p>A random 1v1.</p><br> <p>A random teammate.</p><br>
+<p>A hero selection screen and a “start” button.</p><br>
+
+<p>But that’s not where it really started.</p><br>
+
+<p>It started in the quiet moments —
+when the match ended,
+but you stayed.</p><br>
+
+<p>You stayed in the lobby.</p><br>
+<p>You stayed in the conversation.</p><br>
+<p>You stayed when you didn’t have to.</p><br>
+
+<p>I didn’t choose you because you were good at the game. (hindi ko sinasabi na mahina ka ah)</p><br>
+<p>Not because of win streaks.</p><br>
+<p>Not because you carried me (lakas naman).</p><br>
+
+<p>I chose you because you noticed.</p><br>
+
+<p>You noticed when my replies were shorter.</p><br>
+<p>When my jokes weren’t as funny.</p><br>
+<p>When my “I’m fine” wasn’t fine.</p><br>
+
+<p>You saw me.</p><br>
+
+<p>Not the version I show everyone —
+not the confident one,
+not the serious one,
+not the one who pretends everything is easy.</p><br>
+
+<p>You saw the pauses.</p><br>
+<p>The doubts.</p><br>
+<p></p>The silences between my words.</p><br>
+
+<p>And you didn’t run.</p><br>
+
+<p>You stayed.</p><br>
+
+<p>That’s the part no one else understands.</p><br>
+
+<p>Out of all the players online,
+out of all the matches we could’ve queued,
+you were the only one who didn’t just protect my hero —
+</p><br>
+
+<p>you protected my heart.</p><br>
+
+<p>You chose to see the real me first.</p><br>
+
+<p>And loving you was the easiest response to that.</p><br>
+<p>Iloveyouuu.</p><br>
+      <p>Yuri.</p><br>
+    </div>
+    <div class="heart1" style="top: -10px; left: 10px;"></div>
+    <div class="heart1" style="top: 20px; right: 20px;"></div>
+    <div class="heart1" style="bottom: 10px; left: 50px;"></div>
+  </div>
+</div>
+<script>
+  document.addEventListener('mousemove', function(e) {
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.style.left = (e.clientX - 10) + 'px';
+    heart.style.top = (e.clientY - 10) + 'px';
+    
+    heart.style.setProperty('--x', (Math.random() * 40 - 20) + 'px');
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 1000);
+  });
+</script>
+
+</body>
+</html>
